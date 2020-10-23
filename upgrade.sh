@@ -13,6 +13,7 @@ k -n linkerd apply -f linkerdwebdeploy.yml
 k rollout restart deployment.apps/linkerd-web -n linkerd
 
 k rollout restart deploy
+linkerd check --proxy
 
 
 
